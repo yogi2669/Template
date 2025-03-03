@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Image Scrapper</title>
+        <link href='/static/style.css' rel='stylesheet' />
+    </head>
+    <body>
+        <h1>
+            Image Scappered!
+        </h1>
+        <div class='images'>
+        {%for i in links%}
+            <a href="{{i['src']}}" download='image.jpg'/>
+            <img  src="{{i['src']}}" rel="images"/>
+
+            
+        {% endfor %}
+        </div>
+    </body>
+</html>
